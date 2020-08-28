@@ -2,10 +2,6 @@
  # Overview
  This is a front-end project which is similar to billing app use in hotel and restaurant.The user have to enter his/her pin to use the app.After giving right pin user can select food item according to customer order.Then user can allot specific table to customer and also Customer can pay their bill.
 
-
-
-
-
 # Dependencies/Packages
 1. sweetalert2
 2. bootstrap
@@ -16,8 +12,6 @@
 7. react-router-dom
 8. react-scripts
 9. redux
-
-
 
 # Usage
  #  SignIn
@@ -32,7 +26,7 @@
    - User can Select Particular Table after order get place and allot it to customer
  # Pay Bill
  * Bill
-  - Customer can pay their bill according to totol item they have taken
+   - Customer can pay their bill according to totol item they have taken
 # Author
 Sagar Bawane
 
