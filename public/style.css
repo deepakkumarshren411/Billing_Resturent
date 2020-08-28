@@ -1,0 +1,49 @@
+.navbar-nav > li {
+  padding-left: 50px;
+  padding-right: 55px;
+}
+
+.box-container1 {
+  background-color: whitesmoke;
+  display: block;
+  height: 15%;
+
+  width: 100%;
+  position: absolute;
+}
+.container {
+  height: 300vh;
+}
+.card-img-top {
+  width: 400px;
+  height: auto;
+}
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+
+.container-2 {
+  margin-top: 20px;
+  background-color: tomato;
+}
+@media (min-width: 70px) {
+  .container-3 {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    text-align: center;
+    width: 350px;
+    background-color: tomato;
+  }
+}
+
+.des {
+  text-align: center;
+  font-family: "Playball", cursive;
+  font-size: 40px;
+}
