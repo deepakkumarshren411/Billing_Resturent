@@ -1,49 +1,183 @@
+/* Navbar Styles */
 .navbar-nav > li {
-  padding-left: 50px;
-  padding-right: 55px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
+/* Box Container Styles */
 .box-container1 {
   background-color: whitesmoke;
   display: block;
-  height: 15%;
-
-  width: 100%;
-  position: absolute;
-}
-.container {
-  height: 300vh;
-}
-.card-img-top {
-  width: 400px;
   height: auto;
-}
-.card {
-  margin: 0 auto; /* Added */
-  float: none; /* Added */
-  margin-bottom: 10px; /* Added */
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+  border-bottom: 2px solid #ccc;
 }
 
+/* Main Container Styles */
+.container {
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f8f9fa;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Card Styles */
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 20px;
+  width: 90%;
+  max-width: 400px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Container-2 Styles */
 .container-2 {
   margin-top: 20px;
-  background-color: tomato;
+  background-color: #40c0a2;
+  padding: 20px;
+  border-radius: 10px;
+  animation: slideIn 1s ease-in-out;
+  color: white;
 }
+
+/* Container-3 Styles */
 @media (min-width: 70px) {
   .container-3 {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
-
     width: 100%;
-
-    text-align: center;
-    width: 350px;
+    max-width: 350px;
     background-color: tomato;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    animation: slideUp 1s ease-in-out;
   }
 }
 
+.container-3 {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  background-color: rgb(89, 197, 216);
+  animation: slideUp 1s ease-in-out;
+}
+
+/* Description Styles */
 .des {
   text-align: center;
   font-family: "Playball", cursive;
   font-size: 40px;
+  color: #333;
+  margin: 20px 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-nav > li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .box-container1 {
+    padding: 10px;
+  }
+
+  .container-2 {
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 0.9em;
+  }
+
+  .container-3 {
+    max-width: 100%;
+    padding: 15px;
+    font-size: 0.9em;
+    border-radius: 0;
+  }
+
+  .card {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .des {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .box-container1 {
+    padding: 5px;
+  }
+
+  .container-2, .container-3 {
+    padding: 10px;
+    font-size: 0.8em;
+  }
+
+  .card {
+    width: 100%;
+    margin: 5px auto;
+  }
+
+  .des {
+    font-size: 25px;
+  }
 }

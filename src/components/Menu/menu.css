@@ -1,0 +1,83 @@
+.container {
+  font-family: 'Arial, sans-serif';
+  text-align: center;
+  margin: 20px;
+}
+
+.navbar {
+  background-color: #343a40;
+  padding: 10px;
+}
+
+.navbar-brand h1 {
+  color: #ffffff;
+}
+
+.nav-link {
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  margin: 5px;
+}
+
+.modal-header {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.modal-footer .btn {
+  margin: 5px;
+}
+
+.table-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.table-btn:hover {
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.container {
+  animation: fadeIn 1s ease-in;
+}
+
+.navbar {
+  animation: slideIn 1s ease-in;
+}
+
+.modal-content {
+  animation: fadeIn 0.5s ease-in;
+}

@@ -1,0 +1,129 @@
+/* Container Styles */
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  animation: fadeIn 1s ease-in;
+}
+
+.signin-row {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.signin-col-lg-8 {
+  text-align: center;
+}
+
+/* Title Styles */
+.signin-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-in;
+}
+
+/* Form Styles */
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  animation: fadeInUp 1s ease-in;
+}
+
+.signin-form-group {
+  margin-bottom: 20px;
+}
+
+.signin-label {
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.signin-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.signin-input:focus {
+  border-color: #007bff;
+}
+
+/* Button Styles */
+.signin-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signin-button:hover {
+  background-color: #0056b3;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .signin-row {
+    padding: 20px;
+  }
+
+  .signin-title {
+    font-size: 2rem;
+  }
+
+  .signin-input {
+    padding: 8px;
+  }
+
+  .signin-button {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+  }
+}

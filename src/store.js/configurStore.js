@@ -1,18 +1,18 @@
 import { createStore, combineReducers } from "redux";
 
-import mainCourseReducer from "../Reducer/mainCourseReducer";
-import starterReducer from "../Reducer/starterReducer";
-import dessertReducer from "../Reducer/dessertReducer";
+import mainCourseReducer from "../reducers/maincoursereducers/mainCourseReducer"
+import dessertReducer from "../reducers/dessertreducer/dessertReducer";
+import cartReducer from "../reducers/CartReducer/cartReducer";
+import starterReducer from "../reducers/starterReducers/starterReducer"
+import totalReducer from "../reducers/totalReducers/totalReducer"
 
-import cartReducer from "../Reducer/cartReducer";
-import totolReducer from "../Reducer/totolReducer";
+
 const configureStore = () => {
   const store = createStore(
     combineReducers({
       mainCourse: mainCourseReducer,
       dessert: dessertReducer,
-      totol: totolReducer,
-
+      total: totalReducer,
       starter: starterReducer,
       cart: cartReducer,
     })
